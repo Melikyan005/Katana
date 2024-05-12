@@ -1,0 +1,28 @@
+.nav {
+    background-color: #c1c6cb;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding: 6px 20px 6px 0;
+  display: flex;
+  justify-content: end;
+  column-gap: 50px;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  column-gap: 35px;
+  
+}
+
+
+.nav    img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.cartIcon{
+  cursor: pointer;
+  }
+

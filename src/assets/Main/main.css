@@ -1,0 +1,13 @@
+body{
+    background-color:#dde5eb;
+}
+
+.all-cards{
+    display: grid;
+    grid-template-columns: 350px 350px ;
+    justify-content: center;
+    align-content: center;
+    gap: 30px 45px;
+    margin-bottom: 100px;
+}
+
