@@ -7,6 +7,9 @@
   justify-content: end;
   column-gap: 50px;
   align-items: center;
+position: fixed;
+width: 100%;
+z-index: 1;
 }
 
 ul {
@@ -17,7 +20,7 @@ ul {
 }
 
 
-.nav    img{
+.nav    .avatar{
     border-radius: 50%;
     width: 30px;
 }

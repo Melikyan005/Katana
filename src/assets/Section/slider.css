@@ -5,6 +5,7 @@
   padding-bottom: 40px;
   margin-bottom: 50px;
   position: relative;
+
 }
 
 .slider img {
@@ -18,12 +19,14 @@
     width: 40px;
     position: absolute;
     left:25px;
-    top: 230px
+    top: 230px;
+      z-index: 2;
 }
 
 .slider .right-button{
     width: 40px;
     position: absolute;
     right:25px;
-    top:230px
+    top:230px;
+    z-index: 2;
 }

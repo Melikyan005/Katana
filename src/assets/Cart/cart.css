@@ -1,11 +1,12 @@
 .cart{
 
-    background-color: red;
+    background-color: #c1c6cb;
+    border: 1px solid black;
     z-index: 1;
     position: fixed;
-    top: 17%;
-    left: 78%;
-    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 77.4%;
+    transform: translate(-50%);
     width: 45%;
    
 }

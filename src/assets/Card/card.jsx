@@ -17,27 +17,34 @@ export default function Card(props) {
     setPrice((price = props.item.rating.price * curent));
   }
 
-  function add() {
-    let data = {
-      ...props.item,
-      rating: {
-        ...props.item.rating,
-      },
+  function add(item) {
+    let data ={
+      ...item,
       curent,
-    }; data.rating.price = price;
+      price
+    }
 
-    props.cartData.map((e) => {
-      return  (!e.id) ? 
-        
-        props.setCartData((prev) => [...props.cartData, data])
-       :
-        props.setCartData((prev)=>[...props.cartData,])
+   
+    ! props.cartData.find((e)=>{
+      return e.id === item.id
+    })?
+    props.setCartData((prev)=>[...prev,data]):
+   
+    props.setCartData((prev)=>{
+      prev.forEach((e)=>{
+      if(e.id ===item.id){
+
+        e.curent= e.curent + curent
+      }
       
-    
-    });
-    console.log(props.cartData);
-  }
+   })
+  return prev})
 
+
+
+
+console.log(props.cartData);
+  }
   return (
     <div className="item-card">
       <img src={props.item.image} alt="Sushi" width="265px" />
@@ -60,7 +67,7 @@ export default function Card(props) {
           </div>
         </div>
       </div>
-      <button className="add-btn" onClick={add}>
+      <button className="add-btn" onClick={(e) => add(props.item)}>
         Добавить в корзину
       </button>
     </div>
