@@ -4,7 +4,6 @@ import { useState } from "react";
 export default function Card(props) {
   let [curent, setCurent] = useState(1);
   let [price, setPrice] = useState(props.item.rating.price);
-  let [cartData, setCartData] = useState([]);
 
   function minus() {
     if (curent > 1) {
@@ -25,17 +24,18 @@ export default function Card(props) {
         ...props.item.rating,
       },
       curent,
-    };
-    data.rating.price = price;
+    }; data.rating.price = price;
 
-    setCartData((prev)=>{
-      console.log(prev);
-return[
-  ...prev,
-  data
-]
+    props.cartData.map((e) => {
+      return  (!e.id) ? 
+        
+        props.setCartData((prev) => [...props.cartData, data])
+       :
+        props.setCartData((prev)=>[...props.cartData,])
+      
+    
     });
-    localStorage.setItem("data", JSON.stringify(cartData));
+    console.log(props.cartData);
   }
 
   return (

@@ -4,7 +4,7 @@ import { HiListBullet } from "react-icons/hi2";
 import { HiMiniShoppingCart } from "react-icons/hi2";
 import Cart from "../Cart/cart";
 
-export default function Nav() {
+export default function Nav(props) {
   const [boolCart, setBoolCart] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ export default function Nav() {
         <HiMiniShoppingCart size="25px" color="blue" />
       </div>
       <img src="./images/logo/images (1).png" alt="Sign" />
-      {boolCart && <Cart />}
+      {boolCart && <Cart cartData = {props.cartData} />}
     </div>
   );
 }

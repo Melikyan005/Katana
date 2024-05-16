@@ -11,12 +11,14 @@ import Nav from "./assets/Nav/nav";
 
 
 function App(props) {
+  let [cartData, setCartData] = useState([]);
+
   return (
     <div className="App">
-      <Nav />
+      <Nav cartData={cartData} setCartData={setCartData} />
       <Header />
       <Slider sliderDb={props.sliderDb} />
-      <Main data={props.data} />
+      <Main data={props.data} cartData={cartData} setCartData={setCartData} />
     </div>
   );
 }
