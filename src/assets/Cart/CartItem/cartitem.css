@@ -1,0 +1,19 @@
+.cartItem{
+   display: flex;
+   padding-bottom: 5px;
+   column-gap: 15px;
+   border-bottom: 1px solid gray;
+   padding-top: 5px;
+   padding-left: 5px;
+   position: relative;
+}
+
+.cartItem button{
+  background-color: rgb(222, 8, 8);
+    cursor: pointer;
+    padding: 2px;
+}
+
+.cartAbout{
+    text-align: left;
+}

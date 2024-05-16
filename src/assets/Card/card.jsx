@@ -34,7 +34,8 @@ export default function Card(props) {
       prev.forEach((e)=>{
       if(e.id ===item.id){
 
-        e.curent= e.curent + curent
+        e.curent+= curent
+        e.rating.price+= price
       }
       
    })

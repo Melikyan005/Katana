@@ -1,12 +1,27 @@
 .cart{
-
+display: flex;
+flex-direction: column;
+row-gap: 10px;
     background-color: #c1c6cb;
     border: 1px solid black;
     z-index: 1;
     position: fixed;
-    top: 13%;
-    left: 77.4%;
-    transform: translate(-50%);
-    width: 45%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
    
+}
+
+.cartClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 4px;
+    background-color: red;
+}
+
+.empty{
+    padding: 20px;
 }

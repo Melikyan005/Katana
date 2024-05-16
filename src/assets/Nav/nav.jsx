@@ -13,8 +13,8 @@ export default function Nav(props) {
       <div className="cartIcon" onClick={()=>setBoolCart (!boolCart) }>
         <HiMiniShoppingCart size="25px" color="blue" />
       </div>
-      <img className="avatar"src="./images/logo/images (1).png" alt="Sign" />
-      {boolCart && <Cart cartData = {props.cartData} />}
+      <img className="avatar" src="./images/logo/images (1).png" alt="Sign" />
+      {boolCart && <Cart boolCart={boolCart} setBoolCart={setBoolCart}cartData = {props.cartData} setCartData={props.setCartData} />}
     </div>
   );
 }
