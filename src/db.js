@@ -1,4 +1,4 @@
-export const data = [
+export const datas = [
   {
     id: 1,
     title: "Филадельфия хит ролл",

@@ -1,17 +1,19 @@
 import "../Main/main.css";
 import Card from "../Card/card";
-import { useState } from "react";
 
-
-function Main({data, cartData,setCartData}) {
-
+function Main({ datas, cartData, setCartData }) {
   return (
     <div className="all-cards">
-      {data.map((e) => {
-
-        return <Card key = {e.id} item={e} cartData={cartData} setCartData={setCartData}/>;
+      {datas.map((e) => {
+        return (
+          <Card
+            key={e.id}
+            item={e}
+            cartData={cartData}
+            setCartData={setCartData}
+          />
+        );
       })}
-      
     </div>
   );
 }

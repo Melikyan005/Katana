@@ -31,11 +31,13 @@ export default function Card(props) {
     props.setCartData((prev)=>[...prev,data]):
    
     props.setCartData((prev)=>{
-      prev.forEach((e)=>{
+
+   prev.forEach((e)=>{
       if(e.id ===item.id){
 
         e.curent+= curent
-        e.rating.price+= price
+        e.price+= price
+      
       }
       
    })
@@ -44,7 +46,7 @@ export default function Card(props) {
 
 
 
-console.log(props.cartData);
+
   }
   return (
     <div className="item-card">
