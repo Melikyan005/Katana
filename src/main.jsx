@@ -4,9 +4,10 @@ import App from './App.jsx'
 import './index.css'
 import {datas} from './db'
 import {sliderDb} from './db'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App datas ={datas} sliderDb={sliderDb} />
-  </React.StrictMode>,
+  </BrowserRouter>,
 )

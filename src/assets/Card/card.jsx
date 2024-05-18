@@ -24,7 +24,7 @@ export default function Card(props) {
       price
     }
 
-   
+  
     ! props.cartData.find((e)=>{
       return e.id === item.id
     })?

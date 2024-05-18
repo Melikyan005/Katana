@@ -8,6 +8,7 @@ export default function CartItem(props) {
       props.cartData.filter((e) => {
         return e.id !== a;
       })
+      
     );
     console.log(props.item);
   };
